@@ -1,0 +1,1 @@
+docker run  -v ${PWD}:$PWD -w $PWD/job_1 genepattern/stream_epg python /stream/epg_command_line.py -m $PWD/test/data/seeded_stream_result.pkl -of epg_  -fig_name 'EPG'  -fig_width 10 -fig_height 7 -fig_legend_ncol 3 -comp1 0 -comp2 1 -n_comp 3 -epg_n_nodes 50 -incr_n_nodes 30 -epg_trimmingradius 'Inf' -epg_alpha 0.02 -epg_n_processes 1 -epg_lambda 0.02 -epg_mu 0.1 

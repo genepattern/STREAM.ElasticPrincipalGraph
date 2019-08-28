@@ -1,0 +1,13 @@
+[
+{"name": "Input and Output", 
+  "parameters": ["data.file", "output.filename" ]},
+
+{"name": "Elastic Principal Graphs",
+  "parameters": ["epg_n_nodes", "incr_n_nodes","epg_trimmingradius","epg_alpha","epg_beta", "epg_lambda", "epg_mu", "epg_finalenergy"] },
+
+{"name": "Plotting", "hidden": false,
+  "parameters": ["figure.name", "n_comp", "comp1", "comp2", "figure.width", "figure.height", "figure.legend.num.columns"]}
+
+]
+
+
