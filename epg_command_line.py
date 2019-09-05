@@ -73,8 +73,8 @@ def main():
 
     st.elastic_principal_graph(adata,epg_n_nodes=args.epg_n_nodes,incr_n_nodes=args.incr_n_nodes,epg_trimmingradius=args.epg_trimmingradius,epg_alpha=args.epg_alpha, epg_n_processes=args.epg_n_processes, epg_lambda=args.epg_lambda,epg_mu=args.epg_mu, epg_beta=args.epg_beta, epg_finalenergy=args.epg_finalenergy)
     
-    st.plot_branches(adata, n_components=args.n_comp, comp1=args.comp1, comp2=args.comp2, save_fig=True, fig_name=(args.output_filename_prefix +'branches.png'), fig_path=None,fig_size=(args.fig_width, args.fig_height))
-    st.plot_branches_with_cells(adata,n_components=args.n_comp,comp1=args.comp1,comp2=args.comp2, save_fig=True,fig_name=(args.output_filename_prefix +'branches_with_cells.png'),fig_path=None,fig_size=(args.fig_width, args.fig_height),fig_legend_ncol=args.fig_legend_ncol)
+    st.plot_branches(adata, n_components=args.n_comp, comp1=args.comp1, comp2=args.comp2, save_fig=True, fig_name=(args.output_filename_prefix +'_branches.png'), fig_path=None,fig_size=(args.fig_width, args.fig_height))
+    st.plot_branches_with_cells(adata,n_components=args.n_comp,comp1=args.comp1,comp2=args.comp2, save_fig=True,fig_name=(args.output_filename_prefix +'_branches_with_cells.png'),fig_path=None,fig_size=(args.fig_width, args.fig_height),fig_legend_ncol=args.fig_legend_ncol)
 
     st.write(adata,file_name=(args.output_filename_prefix + '_stream_result.pkl'),file_path='./',file_format='pkl') 
 
