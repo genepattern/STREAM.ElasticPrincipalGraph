@@ -60,7 +60,6 @@ def main():
     parser.add_argument("-comp1",dest="comp1", type = int, default=0,  help="")   
     parser.add_argument("-comp2",dest="comp2", type = int, default=1,  help="")      
     parser.add_argument("-n_comp",dest="n_comp", type = int, default=3,  help="")      
-    parser.add_argument("-fig_name",dest="fig_name",  default=None, help="")
     parser.add_argument("-fig_width",dest="fig_width", type=int, default=8, help="")        
     parser.add_argument("-fig_height",dest="fig_height", type=int, default=8, help="")
     parser.add_argument("-fig_legend_ncol",dest="fig_legend_ncol", type=int, default=None, help="")                                   

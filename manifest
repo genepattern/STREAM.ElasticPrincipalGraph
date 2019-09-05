@@ -6,7 +6,7 @@ LSID=urn:lsid:broad.mit.edu:cancer.software.genepattern.module.analysis:00399:99
 author=Ted Liefeld, UCSD School of Medicine.
 categories=SingleCell
 
-commandLine=python /stream/epg_command_line.py -m <data.file> -of <output.filename> -fig_name <figure.name> <figure.width> <figure.height> <figure.legend.num.columns> <comp1> <comp2> <n_comp> <epg_n_nodes>  <incr_n_nodes> <epg_trimmingradius> <epg_alpha> -epg_n_processes <job.cpuCount>  <epg_lambda> <epg_mu> <epg_finalenergy> <epg_beta>
+commandLine=python /stream/epg_command_line.py -m <data.file> -of <output.filename> <figure.width> <figure.height> <figure.legend.num.columns> <comp1> <comp2> <n_comp> <epg_n_nodes>  <incr_n_nodes> <epg_trimmingradius> <epg_alpha> -epg_n_processes <job.cpuCount>  <epg_lambda> <epg_mu> <epg_finalenergy> <epg_beta>
 
 cpuType=any
 description=
@@ -35,18 +35,19 @@ p1_type=java.io.File
 p1_value=
 
 p2_MODE=
-p2_TYPE=CHOICE
-p2_default_value=<output.filename>_fig_
-p2_description=The name prefix for the  outputs
+p2_TYPE=TEXT
+p2_default_value=0.0
+p2_description=Beta parameter of the penalized elastic energy.
 p2_fileFormat=
 p2_flag=
-p2_name=figure.name
+p2_name=epg_beta
 p2_numValues=1..1
 p2_optional=
 p2_prefix=
-p2_prefix_when_specified=
+p2_prefix_when_specified=-epg_beta    
 p2_type=java.lang.String
 p2_value=
+
 
 p3_MODE=
 p3_TYPE=TEXT
@@ -246,19 +247,6 @@ p16_prefix_when_specified=-epg_finalenergy
 p16_type=java.lang.String
 p16_value=
 
-p17_MODE=
-p17_TYPE=TEXT
-p17_default_value=0.0
-p17_description=Beta parameter of the penalized elastic energy.
-p17_fileFormat=
-p17_flag=
-p17_name=epg_beta
-p17_numValues=1..1
-p17_optional=
-p17_prefix=
-p17_prefix_when_specified=-epg_beta   
-p17_type=java.lang.String
-p17_value=
 
 
 
