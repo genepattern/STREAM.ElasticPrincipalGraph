@@ -3,10 +3,10 @@
   "parameters": ["data.file", "output.filename" ]},
 
 {"name": "Elastic Principal Graphs",
-  "parameters": ["epg_n_nodes", "incr_n_nodes","epg_trimmingradius","epg_alpha","epg_beta", "epg_lambda", "epg_mu", "epg_finalenergy"] },
+  "parameters": ["epg.num.nodes", "incremental.number.of.nodes","epg.trimming.radius","epg.alpha","epg.beta", "epg.lambda", "epg.mu", "epg.final.energy"] },
 
 {"name": "Plotting", "hidden": false,
-  "parameters": ["n_comp", "comp1", "comp2", "figure.width", "figure.height", "figure.legend.num.columns"]}
+  "parameters": ["num.components", "component.1", "component.2", "figure.width", "figure.height", "figure.legend.num.columns"]}
 
 ]
 
