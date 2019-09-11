@@ -6,7 +6,7 @@ LSID=urn:lsid:broad.mit.edu:cancer.software.genepattern.module.analysis:00399:99
 author=Ted Liefeld, UCSD School of Medicine.
 categories=SingleCell
 
-commandLine=python /stream/epg_command_line.py -m <data.file> -of <output.filename> <figure.width> <figure.height> <figure.legend.num.columns> <component.1> <component.2> <num.components> <epg.num.nodes>  <incremental.number.of.nodes> <epg.trimming.radius> <epg.alpha> -epg_n_processes <job.cpuCount>  <epg.lambda> <epg.mu> <epg.final.energy> <epg.beta>
+commandLine=python /stream/epg_command_line.py -m <data.file> -of <output.filename> <figure.width> <figure.height> <figure.legend.num.columns> <component.x> <component.y> <num.components> <epg.num.nodes>  <incremental.number.of.nodes> <epg.trimming.radius> <epg.alpha> -epg_n_processes <job.cpuCount>  <epg.lambda> <epg.mu> <epg.final.energy> <epg.beta>
 
 cpuType=any
 description=
@@ -155,7 +155,7 @@ p10_default_value=0
 p10_description=Component used for x-axis in plots,
 p10_fileFormat=
 p10_flag=
-p10_name=component.1
+p10_name=component.x
 p10_numValues=1..1
 p10_optional=
 p10_prefix=
@@ -169,7 +169,7 @@ p11_default_value=1
 p11_description=Component used for y-axis in plots,
 p11_fileFormat=
 p11_flag=
-p11_name=component.2
+p11_name=component.y
 p11_numValues=1..1
 p11_optional=
 p11_prefix=
