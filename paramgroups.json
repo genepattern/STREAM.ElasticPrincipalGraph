@@ -6,7 +6,7 @@
   "parameters": ["epg.num.nodes", "incremental.number.of.nodes","epg.trimming.radius","epg.alpha","epg.beta", "epg.lambda", "epg.mu", "epg.final.energy"] },
 
 {"name": "Plotting", "hidden": false,
-  "parameters": ["num.components", "component.1", "component.2", "figure.width", "figure.height", "figure.legend.num.columns"]}
+  "parameters": ["num.components", "component.x", "component.y", "figure.width", "figure.height", "figure.legend.num.columns"]}
 
 ]
 
