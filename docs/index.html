@@ -48,19 +48,19 @@
 
 <p>STREAM.ElasticPrincipalGraph is uses elastic principal graph learning to calculate a pseudotime trajectory. </p>
 
-<p><h5>Huidong to add detail explaining this part of the STREAM pipeline</h5></p>
+<p>Elastic principal graphs are structured data approximators, consisting of vertices connected by edges. The vertices are embedded into the space of the data, minimizing the mean squared distance (MSD) to the data points, similarly to k-means. Unlike unstructured k-means, the edges connecting the vertices are used to define an elastic energy term. The elastic energy term and MSD are used to create penalties for edge stretching and bending of branches. </p>
 
-<p>&nbsp;</p>
 
 <h2>Algorithm</h2>
 <p>
-<h5>Huidong to cover details of this portion of the analysis</h5>
+The STREAM.ElasticPrincipalGraph module uses the R-language <a href="https://github.com/Albluca/ElPiGraph.R">ElPiGraph</a> implementation of Elastic Principal Graphs.  To find the optimal graph structure, ElPiGraph uses a topological grammar (or, graph grammar) approach.  ElPiGraph is a completely redesigned algorithm for the previously introduced elastic principal graph optimization based on the use of elastic matrix Laplacian, trimmed mean square error, explicit control of topological complexity and scalability to millions of points on an ordinary laptop. 
 </p>
 
 <h2>References</h2>
 <p>H Chen, L Albergante, JY Hsu, CA Lareau, GL Bosco, J Guan, S Zhou, AN Gorban, DE Bauer, MJ Aryee, DM Langenau, A Zinovyev, JD Buenrostro, GC Yuan, L Pinello&nbsp;<a href="https://www.nature.com/articles/s41467-019-09670-4">Single-cell trajectories reconstruction, exploration and mapping of omics data with STREAM. </a> Nature Communications, volume 10, Article number: 1903 (2019)</p>
 <p>Nestorowa, S. et al.<a href="https://www.ncbi.nlm.nih.gov/pubmed/27365425"> A single-cell resolution map of mouse hematopoietic stem and progenitor cell differentiation</a>. Blood 128, e20-31 (2016).</p>
-<p>Pinello Lab &nbsp; <a href="https://github.com/pinellolab/STREAM">STREAM Github Repository</a></p>
+<p>Pinello Lab &nbsp; <a href="https://github.com/pinellolab/STREAM">STREAM GitHub Repository</a></p>
+<p>ElPiGraph <a href="https://github.com/Albluca/ElPiGraph.R"> GitHub Repository</a></p>.
 <p><b>ADD GPNB NOTEBOOK HERE WHEN READY</b></p>
 
 <h2>Input Files</h2>
