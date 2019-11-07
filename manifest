@@ -9,7 +9,7 @@ categories=SingleCell
 commandLine=python /stream/epg_command_line.py -m <data.file> -of <output.filename> <figure.width> <figure.height> <figure.legend.num.columns> <component.x> <component.y> <num.components> <epg.num.nodes>  <incremental.number.of.nodes> <epg.trimming.radius> <epg.alpha> -epg_n_processes <job.cpuCount>  <epg.lambda> <epg.mu> <epg.final.energy> <epg.beta>
 
 cpuType=any
-description=
+description=STREAM (Single-cell Trajectories Reconstruction, Exploration And Mapping) is an interactive pipeline capable of disentangling and visualizing complex branching trajectories from both single-cell transcriptomic and epigenomic data. STREAM.ElasticPrincipalGraph is uses elastic principal graph learning to calculate a pseudotime trajectory.
 fileFormat=pkl
 language=any
 minGenePatternVersion=3.9.13
