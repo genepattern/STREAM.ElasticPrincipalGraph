@@ -55,13 +55,20 @@
 <p>
 The STREAM.ElasticPrincipalGraph module uses the R-language <a href="https://github.com/Albluca/ElPiGraph.R">ElPiGraph</a> implementation of Elastic Principal Graphs.  To find the optimal graph structure, ElPiGraph uses a topological grammar (or, graph grammar) approach.  ElPiGraph is a completely redesigned algorithm for the previously introduced elastic principal graph optimization based on the use of elastic matrix Laplacian, trimmed mean square error, explicit control of topological complexity and scalability to millions of points on an ordinary laptop. 
 </p>
+an elastic principal graph is an undirected graph with a set of vertices V and a set of edges E. The set of vertices V is embedded in the multidimensional space by minimizing the sum of the data approximation term and the graph elastic energy. Elastic principal graphs are based on minimization of the energy potential containing three parts :
+</p><p style="margin-left: 40px">
+𝑈=𝑀𝑆𝐸+𝜆𝑈𝐸+𝜇𝑈𝑅
+ </p><p>
+where MSE is the mean squared error of data approximation,  𝑈𝐸  is the sum of squared edge lengths,  𝑈𝑅  is a term minimizing the deviation of the principal graph embedment from harmonicity, equation ,  𝜆 ,  𝜇  are coefficients of regularization.
+<p>
+<p>𝑒𝑝𝑔 𝑡𝑟𝑖𝑚𝑚𝑖𝑛𝑔 𝑟𝑎𝑑𝑖𝑢𝑠 , 𝑒𝑝𝑔 𝑙𝑎𝑚𝑏𝑑𝑎, and 𝑒𝑝𝑔 𝑚𝑢 are parameters having the following meaning: 𝑒𝑝𝑔 𝑡𝑟𝑖𝑚𝑚𝑖𝑛𝑔 𝑟𝑎𝑑𝑖𝑢𝑠 is the trimming radius such that points further than 𝑒𝑝𝑔 𝑡𝑟𝑖𝑚𝑚𝑖𝑛𝑔 𝑟𝑎𝑑𝑖𝑢𝑠 from any node do not contribute to the optimization of the graph, 𝑒𝑝𝑔 𝑙𝑎𝑚𝑏𝑑𝑎 is the edge stretching elasticity modulo regularizing the total length of the graph edges and making their distribution close to equidistant in the multidimensional space, 𝑒𝑝𝑔 𝑚𝑢 is the star bending elasticity modulo controlling the deviation of the graph stars from harmonic configurations.</p>
 
+</p>
 <h2>References</h2>
 <p>H Chen, L Albergante, JY Hsu, CA Lareau, GL Bosco, J Guan, S Zhou, AN Gorban, DE Bauer, MJ Aryee, DM Langenau, A Zinovyev, JD Buenrostro, GC Yuan, L Pinello&nbsp;<a href="https://www.nature.com/articles/s41467-019-09670-4">Single-cell trajectories reconstruction, exploration and mapping of omics data with STREAM. </a> Nature Communications, volume 10, Article number: 1903 (2019)</p>
 <p>Nestorowa, S. et al.<a href="https://www.ncbi.nlm.nih.gov/pubmed/27365425"> A single-cell resolution map of mouse hematopoietic stem and progenitor cell differentiation</a>. Blood 128, e20-31 (2016).</p>
 <p>Pinello Lab &nbsp; <a href="https://github.com/pinellolab/STREAM">STREAM GitHub Repository</a></p>
 <p>ElPiGraph <a href="https://github.com/Albluca/ElPiGraph.R"> GitHub Repository</a></p>.
-<p><b>ADD GPNB NOTEBOOK HERE WHEN READY</b></p>
 
 <h2>Input Files</h2>
 
